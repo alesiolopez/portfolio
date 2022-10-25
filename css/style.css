@@ -12,6 +12,13 @@ html{
 body{
     width: 100%;
     height: 100vh;
+    text-align: center;
+}
+
+.footer{
+    background: salmon;
+    position:fixed;
+    bottom: 0;
 }
 
 *{
@@ -19,11 +26,18 @@ body{
     margin: 0;
     padding: 0;
     font-family: Urbanist, sans-serif;
+    font-size: 20px;
 }
+
+h1{
+    font-size: 50px;
+}
+/* ------------------------ */
+
 
 /* PÁGINA INICIO */
 .container-uno {
-    padding-top: 150px;
+    padding-top: 170px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/bg-image1.jpg);
@@ -34,7 +48,7 @@ body{
 
 /* PÁGINA PROYECTOS */
 .container-dos {
-    padding-top: 150px;
+    padding-top: 170px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/logo-alesio1.jpg);
@@ -45,29 +59,37 @@ body{
 
 /* PÁGINA CONTÁCTAME */
 .container-tres {
-    padding-top: 150px;
+    padding-top: 170px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/logo-alesio2.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    justify-content:space-between;
 }
+/* ------------------------ */
+
+
+/* PRESENTACIÓN FORMATO*/
+.presentacion {
+    display: inline-block;
+    border: 2px solid lightblue;    
+}
+/* ------------------------- */
 
 /* BARRA DE NAVEGACIÓN */
-
 .container-nav {
     position: fixed;
     top: 0;
     left: 4%;
-    width:90%;
+    width:100%;
 }
 
 .navbar {
+    margin: auto;
     width: 80%;
-    padding-top: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 25px 0;
     display:flex;
     align-items: center;
     justify-content:space-between;
@@ -90,7 +112,7 @@ body{
     font-size: 1.2rem;
 }
 
-/* creo la la linea debajo de cada item */
+/* creo la linea debajo de cada item */
 .navbar ul li::before {
     content: "";
     height: 3px;
@@ -104,4 +126,70 @@ body{
 
 .navbar ul li:hover::before {
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
+}
+/* ------------------------ */
+
+
+/* LINKS CONTÁCTAME */
+
+.redes-contacto ul li {
+    list-style: none; 
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.redes-contacto ul li a {
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.redes-contacto ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%; /* hago que no tenga ancho */
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease-out; /* aplicamos una transición a la linea */
+}
+
+.redes-contacto ul li:hover::before {
+    width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
+}
+/* ------------------------ */
+
+/* Botones */
+.btn_normal {
+    color: lightblue;
+    background: transparent;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border: 2px solid lightblue;
+    border-radius: 50px;
+    transition: 0.2s ease-out;
+}
+
+.btn_normal:hover {
+    color: black;
+    background: lightblue;
+}
+
+.btn_normal:active {
+    transform: scale(1.05);
+}
+
+/* -----------------CONTENIDO--------------- */
+
+.proyectos{
+    margin: 45px auto;
+    width: 80%;
+    display:flex; /* pone a cada elemento dentro de proyectos uno al lado del otro */
+    justify-content:space-between;
+}
+
+.container-dos img {
+    width: 300px;
 }

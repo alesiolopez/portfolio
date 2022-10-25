@@ -4,45 +4,98 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Alesio López</title>
 </head>
 <body>
-    <!-- menú de navegación -->
-    <nav class="container-nav">
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="container-nav" data-aos="fade-up">
         <div class="navbar">
-            <a href="https://github.com/alesiolopez" target="_blank"><img src="./img/logo-alesio1.jpg" class="logo" alt="Mi Logo"></a>
+            <a href="#inicio"><img src="./img/logo-alesio1.jpg" class="logo" alt="Mi Logo"></a>
         
             <ul>
-                <li><a href="#scroll-uno">Inicio</a></li>
-                <li><a href="#scroll-dos">Proyectos</a></li>
-                <li><a href="#scroll-tres">Contáctame</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contáctame</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- CONTENIDO -->
-    <div class="container-uno" id="scroll-uno">
+<!-- CONTENIDO -->
+<!-- INICIO -->
+    <div class="container-uno" id="inicio">
         
         <div class="presentacion">
             <h1>Alesio López</h1>
             <h2>Desarrollador Web Front-End</h2>
-            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt illo pariatur sequi, quaerat tempora tempore aliquid voluptatem aut, laborum id dicta officiis similique blanditiis temporibus debitis quam minus ipsa provident?</P>
         </div>
-        
+        <div>
+            <i>Soy un desarrollador apasionado que busca siempre la excelencia en todo lo que hace. Te comparto mi portfolio para que puedas ver mi historial.</i>
+        </div>
     </div>
 
-    <div class="container-dos" id="scroll-dos">
+<!-- PROYECTOS -->
+    <div class="container-dos" id="proyectos">
         <h1>PROYECTOS</h1>
-        <p> Para animar en los Proyectos: https://www.youtube.com/watch?v=wu_M_V-Hehg</p>
+        <div class="proyectos" data-aos="fade-up">
+            <div>
+                <h2> Proyecto 1</h2>
+                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h4>Descripción</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+            </div>
+            <img src="./img/bg-image1.jpg" alt="">
+        </div>
+
+        <div class="proyectos" data-aos="fade-up">
+            <img src="./img/bg-image1.jpg" alt="">
+            <div>
+                <h2> Proyecto 2</h2>
+                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h4>Descripción</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+            </div>
+        </div>
+
+        <div class="proyectos" data-aos="fade-up">
+            <div>
+                <h2> Proyecto 3</h2>
+                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h4>Descripción</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+            </div>
+            <img src="./img/bg-image1.jpg" alt="">
+        </div>
     </div>
 
-    <div class="container-tres" id="scroll-tres">
+<!-- CONTACTO -->
+    <div class="container-tres" id="contacto">
         <h1>CONTÁCTAME</h1>
+        <div data-aos="fade-up">
+            <div class="redes-contacto">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/alesio-lopez/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/alesiolopez" target="_blank">GitHub</a></li>
+                    <li><a href="https://www.instagram.com/alesiolopez/" target="_blank">Instagram</a></li>
+                </ul>
+            </div>
+
+            <div class="contacto">
+                    <form action="form" class="formulario-contacto">
+
+                    </form>
+                    <input type="button" value="Enviarme un mail" class="btn_normal">
+            </div>
+        </div>
     </div>
+    <footer class="footer">
+        Desarrollado por <span><a href="#" target="_blank" rel="noopener noreferrer">Alesio López</a></span>
+    </footer>
 
-    
-
-    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 </html>
