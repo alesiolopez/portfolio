@@ -25,24 +25,28 @@ body{
 .footer{
     position:fixed;
     bottom: 0;
+    right: 0;
+    left: 0;
 }
 
 h1{
     font-size: 50px;
+    transition: 0.5s;
 }
 
 h2{
     font-size: 30px;
+    transition: 0.2s;
 }
 /* ------------------------ */
 
 
 /* PÁGINA INICIO */
 .container-uno {
-    padding-top: 170px;
+    padding-top: 120px;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/bg-image1.jpg);
+    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/fondo3.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -79,35 +83,52 @@ h2{
 /* PRESENTACIÓN FORMATO*/
 .container-presentacion {
     display: inline-block;
-    border: 2px solid black;
     padding: 50px 15px;
     position: relative;
+    transition: 1s;
 }
 
-.alesiolopez:hover h1{
-    color: red;
+.alesiolopez {
+    transition: 1s;
+}
+
+.container-presentacion:hover h1{
+    transform:scale(1.2);
+    color: lightblue;
     transition: 1s;
 }
 
 .descripcion {
-    width: 500px;
+    width: 600px;
 }
 
 /* CONTÁCTAME FORMATO */
 .container-contactame {
-    margin: auto;
+    margin: 45px auto;
     width: 80%;
-    padding: 17px 0;
-    align-items: center;
-    justify-content:space-between;
-    transition: 0.4s;
+    display:flex; /* pone a cada elemento dentro de proyectos uno al lado del otro */
+    justify-content:space-evenly;
+    box-shadow: 0 0 10px lightblue;
+    padding: 100px 20px;
 }
+
+.container-contactame input {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.container-contactame label {
+    display: block;
+}
+
+
 /* ------------------------- */
 
 /* BARRA DE NAVEGACIÓN */
 .container-nav {
     position: fixed;
-    height: 170px;
+    height: 150px;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -145,7 +166,8 @@ h2{
     content: "";
     height: 3px;
     width: 0%; /* hago que no tenga ancho */
-    background: white;
+    background: lightblue;
+    box-shadow: 0px 0px 10px white;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -161,7 +183,7 @@ h2{
     padding: 5px 30px;
     width: 100%;
     border: 1px solid lightblue;
-    background: rgba(22, 22, 22, 0.8);
+    background: rgba(39, 39, 39, 0.8);
 }
 
 .off-nav {
@@ -181,14 +203,18 @@ h2{
 
 .redes-contacto ul li a {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    align-items:center;
+    
 }
 
+/* Linea subrayado */
 .redes-contacto ul li::before {
     content: "";
     height: 3px;
     width: 0%; /* hago que no tenga ancho */
-    background: white;
+    background: lightblue;
+    box-shadow: 0px 0px 10px white;
     position: absolute;
     left: 0;
     bottom: -4px;
@@ -198,6 +224,8 @@ h2{
 .redes-contacto ul li:hover::before {
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
 }
+
+
 /* ------------------------ */
 
 /* Botones */
@@ -215,6 +243,7 @@ h2{
 .btn_normal:hover {
     color: black;
     background: lightblue;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .btn_normal:active {
@@ -235,4 +264,10 @@ h2{
     max-width: 300px;
     min-height: 181px;
     max-height: 181px;
+    transition: 1s;
+}
+
+.proyectos:hover img {
+    transform: scale(1.1);
+    transition: 1s;
 }

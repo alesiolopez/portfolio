@@ -5,7 +5,7 @@ AOS.init();
  */
 /* guardamos en variables los elementos siguientes*/
 const nav = document.querySelector('nav > div'); /* tomamos el nav */
-let prevY = window.scrollY; /* tomamos la posición actual del scroll */
+let prevY = 0; /* tomamos la posición actual del scroll y por defecto lo dejamos en 0*/
 
 /* detectamos el evento scroll y le decimos qué hacer*/
 window.addEventListener('scroll', function(){
