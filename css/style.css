@@ -1,6 +1,14 @@
 /* CONFIGURACIÓN DE LA PÁGINA EN GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
 
+*{
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: Urbanist, sans-serif;
+    font-size: 20px;
+}
+
 body::-webkit-scrollbar {
     width: 0; /* elimino la scrollbar */
 }
@@ -11,26 +19,20 @@ html{
 
 body{
     width: 100%;
-    height: 100vh;
     text-align: center;
 }
 
 .footer{
-    background: salmon;
     position:fixed;
     bottom: 0;
 }
 
-*{
-    color: white;
-    margin: 0;
-    padding: 0;
-    font-family: Urbanist, sans-serif;
-    font-size: 20px;
-}
-
 h1{
     font-size: 50px;
+}
+
+h2{
+    font-size: 30px;
 }
 /* ------------------------ */
 
@@ -48,10 +50,12 @@ h1{
 
 /* PÁGINA PROYECTOS */
 .container-dos {
-    padding-top: 170px;
+    margin-bottom: 0;
+    padding-top: 140px;
+    padding-bottom: 90px;
     width: 100%;
-    height: 100vh;
-    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/logo-alesio1.jpg);
+    height: 100%;
+    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/fondo1.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -59,10 +63,11 @@ h1{
 
 /* PÁGINA CONTÁCTAME */
 .container-tres {
-    padding-top: 170px;
+    margin-top: 0;
+    padding-top: 140px;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/logo-alesio2.jpg);
+    background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/fondo2.jpg);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,27 +77,50 @@ h1{
 
 
 /* PRESENTACIÓN FORMATO*/
-.presentacion {
+.container-presentacion {
     display: inline-block;
-    border: 2px solid lightblue;    
+    border: 2px solid black;
+    padding: 50px 15px;
+    position: relative;
+}
+
+.alesiolopez:hover h1{
+    color: red;
+    transition: 1s;
+}
+
+.descripcion {
+    width: 500px;
+}
+
+/* CONTÁCTAME FORMATO */
+.container-contactame {
+    margin: auto;
+    width: 80%;
+    padding: 17px 0;
+    align-items: center;
+    justify-content:space-between;
+    transition: 0.4s;
 }
 /* ------------------------- */
 
 /* BARRA DE NAVEGACIÓN */
 .container-nav {
     position: fixed;
+    height: 170px;
     top: 0;
-    left: 4%;
-    width:100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .navbar {
     margin: auto;
     width: 80%;
-    padding: 25px 0;
-    display:flex;
+    padding: 17px 0;
+    display: flex;
     align-items: center;
     justify-content:space-between;
+    transition: 0.4s;
 }
 
 .logo{
@@ -126,6 +154,18 @@ h1{
 
 .navbar ul li:hover::before {
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
+}
+
+.navbar-scroll{
+    transform: scale(0.8);
+    padding: 5px 30px;
+    width: 100%;
+    border: 1px solid lightblue;
+    background: rgba(22, 22, 22, 0.8);
+}
+
+.off-nav {
+    transform: translateY(-300px);
 }
 /* ------------------------ */
 
@@ -191,5 +231,8 @@ h1{
 }
 
 .container-dos img {
-    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 181px;
+    max-height: 181px;
 }

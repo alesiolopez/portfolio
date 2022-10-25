@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Alesio López</title>
 </head>
-<body>
+<body class="body">
     <!-- MENÚ DE NAVEGACIÓN -->
-    <nav class="container-nav" data-aos="fade-up">
+    <nav class="container-nav">
         <div class="navbar">
             <a href="#inicio"><img src="./img/logo-alesio1.jpg" class="logo" alt="Mi Logo"></a>
         
@@ -26,54 +26,58 @@
 <!-- CONTENIDO -->
 <!-- INICIO -->
     <div class="container-uno" id="inicio">
-        
-        <div class="presentacion">
-            <h1>Alesio López</h1>
-            <h2>Desarrollador Web Front-End</h2>
-        </div>
-        <div>
-            <i>Soy un desarrollador apasionado que busca siempre la excelencia en todo lo que hace. Te comparto mi portfolio para que puedas ver mi historial.</i>
+        <div class="container-presentacion">
+            <div class="alesiolopez">
+                <h1>Alesio López</h1>
+                <h2>Desarrollador Web Front-End</h2>
+            </div>
+            <div class="descripcion">
+                <i>Soy un desarrollador apasionado que busca siempre la excelencia en todo lo que hace. Te comparto mi portfolio para que puedas ver mi historial.</i>
+            </div>
         </div>
     </div>
 
 <!-- PROYECTOS -->
     <div class="container-dos" id="proyectos">
         <h1>PROYECTOS</h1>
-        <div class="proyectos" data-aos="fade-up">
+        <div class="proyectos" data-aos="fade-right">
             <div>
-                <h2> Proyecto 1</h2>
-                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h2>Tienda</h2>
+                <i>Enlace repositorio en GitHub: <a href="https://github.com/alesiolopez/tienda-CODER" target="_blank">Clic aquí.</a></i><br>
+                <i>Enlace del sitio: <a href="#">Sitio web.</a></i>
                 <h4>Descripción</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+                <p>Es un proyecto realizado como entrega final en el curso de <span><b><i>Desarrollador Javascript</i></b></span> realizado en <span><b><i>CoderHouse</i></b></span>. <br>Los invito a visualizar la tienda con un pequeño login/signup y que puedan ver el desarrollo en Javascript que he realizado.</p>
             </div>
-            <img src="./img/bg-image1.jpg" alt="">
+            <img src="./img/tienda_captura.png" alt="Tienda_CoderHouse">
         </div>
 
-        <div class="proyectos" data-aos="fade-up">
+        <div class="proyectos" data-aos="fade-left">
             <img src="./img/bg-image1.jpg" alt="">
             <div>
-                <h2> Proyecto 2</h2>
-                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h2>Mi Portfolio</h2>
+                <i>Enlace repositorio en GitHub: <a href="https://github.com/alesiolopez/portfolio" target="_blank">Clic aquí.</a></i><br>
+                <i>Enlace del sitio: <a href="#">Sitio web.</a></i>
                 <h4>Descripción</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+                <p>Acá realizo mi página personal con mucho esfuerzo y entusiasmo aplicando lo que he aprendido hasta hoy. <br> Es la página actual que están visualizando pero los invito a visualizar el repositorio en GitHub.</p>
             </div>
         </div>
 
-        <div class="proyectos" data-aos="fade-up">
+        <div class="proyectos" data-aos="fade-right">
             <div>
-                <h2> Proyecto 3</h2>
-                <i>https://www.youtube.com/watch?v=wu_M_V-Hehg</i>
+                <h2>Clicker Game</h2>
+                <i>Enlace repositorio en GitHub: <a href="https://github.com/alesiolopez/idle" target="_blank">Clic aquí.</a></i><br>
+                <i>Enlace del sitio: <a href="#">Sitio web.</a></i>
                 <h4>Descripción</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias impedit accusamus quasi sint vel nihil quo minus nostrum laborum tenetur autem totam omnis tempore nisi distinctio ducimus, natus assumenda dolor.</p>
+                <p>Es un proyecto que desarrollé para divertirme, un juego Clicker IDLE. Los invito a probarlo y revisar el repositorio del mismo, es algo simple pero adictivo! <br> Este es un proyecto que a futuro puede crecer.</p>
             </div>
-            <img src="./img/bg-image1.jpg" alt="">
+            <img src="./img/clickergame_captura.png" alt="">
         </div>
     </div>
 
 <!-- CONTACTO -->
     <div class="container-tres" id="contacto">
         <h1>CONTÁCTAME</h1>
-        <div data-aos="fade-up">
+        <div data-aos="fade-up" class="container-contactame">
             <div class="redes-contacto">
                 <ul>
                     <li><a href="https://www.linkedin.com/in/alesio-lopez/" target="_blank">LinkedIn</a></li>
@@ -83,18 +87,29 @@
             </div>
 
             <div class="contacto">
-                    <form action="form" class="formulario-contacto">
-
-                    </form>
+                <form action="form" class="formulario-contacto">
+                    <label for="">Nombre</label>
+                    <input type="text" name="" id="">
+                    <br>
+                    <label for="">Email</label>
+                    <input type="email" name="correo">
+                    <br>
+                    <label for=""></label>
                     <input type="button" value="Enviarme un mail" class="btn_normal">
+                </form>
             </div>
         </div>
     </div>
+
+    <!-- FOOTER -->
     <footer class="footer">
-        Desarrollado por <span><a href="#" target="_blank" rel="noopener noreferrer">Alesio López</a></span>
+        <i>        Desarrollado por <span><a href="https://github.com/alesiolopez" target="_blank" rel="noopener noreferrer">Alesio López</a></span>
+        </i>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--     <script src="./node_modules/animejs/lib/anime.min.js"></script> -->
+<!--     <script src="./js/animaciones.js"></script> -->
     <script src="./js/scroll.js"></script>
     <script src="./js/main.js"></script>
 </body>
