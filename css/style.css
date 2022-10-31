@@ -1,5 +1,12 @@
 /* CONFIGURACIÓN DE LA PÁGINA EN GENERAL */
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+li{
+    list-style: none; 
+}
+
+a{
+    text-decoration: none;
+}
 
 *{
     color: white;
@@ -209,8 +216,15 @@ h2{
 
 .redes-contacto ul li {
     list-style: none; 
-    display: inline-block;
-    margin: 0 20px;
+    display: block;
+    margin: 5px 20px;
+    position: relative;
+}
+
+.datos-contacto ul li {
+    list-style: none; 
+    display:block;
+    margin: 5px 20px;
     position: relative;
 }
 
@@ -218,7 +232,12 @@ h2{
     text-decoration: none;
     font-size: 1.2rem;
     align-items:center;
-    
+}
+
+.datos-contacto ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    align-items: center;
 }
 
 /* Linea subrayado */
@@ -235,6 +254,22 @@ h2{
 }
 
 .redes-contacto ul li:hover::before {
+    width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
+}
+
+.datos-contacto ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%; /* hago que no tenga ancho */
+    background: lightblue;
+    box-shadow: 0px 0px 10px white;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s ease-out; /* aplicamos una transición a la linea */
+}
+
+.datos-contacto ul li:hover::before {
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
 }
 
