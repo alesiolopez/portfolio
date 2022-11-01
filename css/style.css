@@ -381,7 +381,7 @@ h2{
     }
     .container-presentacion{
         position: absolute;
-        bottom: -100px;
+        margin: 220px 20px;
         left: -139px;
     }
     .proyectos{
