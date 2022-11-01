@@ -62,7 +62,7 @@ h2{
 /* PÁGINA PROYECTOS */
 .container-dos {
     margin-bottom: 0;
-    padding-top: 140px;
+    padding-top: 110px;
     padding-bottom: 90px;
     width: 100%;
     height: 100%;
@@ -75,7 +75,7 @@ h2{
 /* PÁGINA CONTÁCTAME */
 .container-tres {
     margin-top: 0;
-    padding-top: 140px;
+    padding-top: 110px;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/fondo2.jpg);
@@ -88,9 +88,14 @@ h2{
 
 
 /* PRESENTACIÓN FORMATO*/
+.container-uno {
+    display: flex;
+}
 .container-presentacion {
-    display: inline-block;
-    padding: 50px 15px;
+    display: block;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 250px;
     position: relative;
     transition: 1s;
 }
@@ -114,11 +119,15 @@ h2{
 }
 
 /* CONTÁCTAME FORMATO */
+.container-tres h1 {
+    margin: auto;
+}
+
 .container-contactame {
     margin: 45px auto;
     width: 80%;
     display:flex; /* pone a cada elemento dentro de proyectos uno al lado del otro */
-    justify-content:space-evenly;
+    justify-content: space-around;
     box-shadow: 0 0 10px lightblue;
     padding: 100px 20px;
 }
@@ -149,7 +158,7 @@ h2{
 /* BARRA DE NAVEGACIÓN */
 .container-nav {
     position: fixed;
-    height: 150px;
+    height: auto;
     top: 0;
     width: 100%;
     z-index: 1;
@@ -199,11 +208,18 @@ h2{
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
 }
 
+/* al hacer scroll */
 .navbar-scroll{
-    transform: scale(0.8);
-    padding: 5px 30px;
+    padding: 0;
+    height: 100px;
     width: 100%;
+    justify-content: space-evenly;
     background: rgba(45, 45, 45, 0.5);
+}
+
+.logo-scroll{
+    transform: scale(0.8);
+    cursor: pointer;
 }
 
 .off-nav {
@@ -316,6 +332,27 @@ h2{
 }
 
 .proyectos:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
     transition: 1s;
+}
+
+/* ------------------------------------------------------ */
+/* -----------------------MEDIA QUERY------------------------ */
+
+@media only screen and (max-width: 700px) {
+    .navbar{
+        display: block;
+        height: auto;
+    }
+    .logo{
+        width: 60px;
+        cursor: pointer;
+    }
+    .proyectos{
+        margin: 45px auto;
+        width: 80%;
+        display:block; /* pone a cada elemento dentro de proyectos uno al lado del otro */
+        justify-content:space-between;
+    }
+
 }
