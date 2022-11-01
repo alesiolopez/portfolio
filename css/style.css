@@ -24,6 +24,10 @@ html{
     scroll-behavior: smooth; /* suavizo el scroll en la página */
 }
 
+html, body {
+    min-height: 100%;
+}
+
 body{
     width: 100%;
     text-align: center;
@@ -54,7 +58,7 @@ h2{
 /* PÁGINA INICIO */
 .container-uno {
     padding-top: 120px;
-    width: 100%;
+    width: auto;
     height: 100vh;
     background-image: linear-gradient(rgba(5,10,5,0.8), rgba(43, 40, 90, 0.8)), url(/img/fondo3.jpg);
     background-size:cover;
@@ -358,5 +362,48 @@ h2{
         display:block; /* pone a cada elemento dentro de proyectos uno al lado del otro */
         justify-content:space-between;
     }
+}
 
+@media only screen and (max-width: 460px){
+    .container-nav{
+        
+        position: absolute;
+        left: 0;
+    }
+    .navbar{
+        display: block;
+        height: auto;
+        width: 150px;
+    }
+    .logo{
+        width: 60px;
+        cursor: pointer;
+    }
+    .container-presentacion{
+        position: absolute;
+        bottom: -100px;
+        left: -139px;
+    }
+    .proyectos{
+        margin: auto;
+        width: auto;
+        display:block; /* pone a cada elemento dentro de proyectos uno al lado del otro */
+        justify-content:space-between;
+    }
+
+    .container-dos img {
+        transform: scale(0.7);
+    }
+
+    .container-tres {
+        height: 95vh;
+    }
+
+    .container-contactame{
+        height: auto;
+    }
+
+    .footer{
+        left: -100px;
+    }
 }
