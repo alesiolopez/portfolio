@@ -111,6 +111,11 @@ h2{
 .alesiolopez {
     transition: 1s;
     margin: 10px 0;
+    transform: scale(1.4);
+}
+.descripcion {
+    transform: scale(1.4);
+    width: 600px;
 }
 
 .container-presentacion {
@@ -123,9 +128,7 @@ h2{
     transition: 1s;
 }
 
-.descripcion {
-    width: 600px;
-}
+
 
 /* CONTÁCTAME FORMATO */
 .container-tres h1 {
