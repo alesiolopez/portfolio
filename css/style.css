@@ -358,11 +358,11 @@ h2{
     }
     .navbar{
         margin: auto;
-        width: 80%;
+        width: auto;
         padding: 17px 0;
-        display:block;
+        display: inline-block;
         align-items: center;
-        justify-content:space-between;
+        justify-content: space-between;
         transition: 0.4s;
         height: auto;
     }
@@ -393,7 +393,7 @@ h2{
         /*width: 150px; */
     }
     .navbar ul li {
-        display: block;
+        display: inline-block;
     }
     .logo{
         width: 60px;
