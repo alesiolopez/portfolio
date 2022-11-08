@@ -53,6 +53,11 @@ h2{
     transition: 0.2s;
 }
 
+.icono {
+    width: 50px;
+    height: 50px;
+}
+
 /* ------------------------ */
 
 
@@ -111,12 +116,21 @@ h2{
 .alesiolopez {
     transition: 1s;
     margin: 10px 0;
+    display: inline-block;
     /* transform: scale(1.4); */
 }
 .descripcion {
     /* transform: scale(1.4); */
     width: 600px;
 }
+
+/* .descripcion:hover {
+    margin-top: 50px;
+    box-shadow: 0px 0px 100px white;
+    border-radius: 25px;
+    padding: 5px;
+    transition: 1s ease-out;
+} */
 
 .container-presentacion {
     margin: auto;
@@ -125,7 +139,11 @@ h2{
 .container-presentacion:hover h1{
     transform:scale(1.2);
     color: lightblue;
-    transition: 1s;
+    box-shadow: 0px 0px 100px white;
+    border-radius: 25px;
+    padding: 10px;
+
+    transition: 2s;
 }
 
 
@@ -138,9 +156,11 @@ h2{
 .container-contactame {
     margin: 45px auto;
     width: 80%;
+    max-width: 1000px;
     display:flex; /* pone a cada elemento dentro de proyectos uno al lado del otro */
     justify-content: space-evenly;
-    box-shadow: 0 0 10px lightblue;
+    box-shadow: 0 0 20px lightblue;
+    border-radius: 25px;
     padding: 100px 20px;
 }
 
@@ -241,18 +261,21 @@ h2{
 
 
 /* LINKS CONTÁCTAME */
+h3 {
+    margin-bottom: 20px;
+}
 
 .redes-contacto ul li {
     list-style: none; 
     display: block;
-    margin: 5px 20px;
+    margin: 10px 20px;
     position: relative;
 }
 
 .datos-contacto ul li {
     list-style: none; 
     display:block;
-    margin: 5px 20px;
+    margin: 10px 20px;
     position: relative;
 }
 
@@ -268,7 +291,7 @@ h2{
     align-items: center;
 }
 
-/* Linea subrayado */
+/* Linea subrayado redes*/
 .redes-contacto ul li::before {
     content: "";
     height: 3px;
@@ -284,6 +307,8 @@ h2{
 .redes-contacto ul li:hover::before {
     width: 100%; /* y cuando pase el mouse por encima se le agregue el 100% del ancho. */
 }
+
+/* Linea subrayado datos */
 
 .datos-contacto ul li::before {
     content: "";
@@ -330,9 +355,13 @@ h2{
 
 .proyectos{
     margin: 45px auto;
+    padding: 25px;
     width: 80%;
+    max-width: 1000px;
     display:flex; /* pone a cada elemento dentro de proyectos uno al lado del otro */
     justify-content:space-between;
+    box-shadow: 0px 0px 20px white;
+    border-radius: 25px;
 }
 
 .container-dos img {
@@ -342,6 +371,7 @@ h2{
     max-height: 181px;
     margin-left: 5px;
     transition: 1s;
+    border-radius: 20px;
 }
 
 .proyectos:hover img {
